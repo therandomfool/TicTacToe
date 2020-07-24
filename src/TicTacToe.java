@@ -129,11 +129,12 @@ public class TicTacToe {
 				return "Congrats you have won";
 			} else if (cpuPositions.containsAll(l)) {
 				return "CPU wins!";
-			} else if (playerPositions.size() + cpuPositions.size() == 9) {
-				return " TIE";
-			}
+			} 
+			
 		}
-
+		if (playerPositions.size() + cpuPositions.size() == 9) {
+			return " TIE";
+		}
 		return "";
 
 	}
